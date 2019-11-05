@@ -118,3 +118,19 @@ The assignment deliverable consists of a Github repository containing:
 
 # Design
 [ Your work goes here ]
+
+# Test 
+-> creati file separati per ogni elemento della rete (al posto di common.sh); modificato file vagrant con run: 'always' per eseguire ad ogni vagrant up ogni file con i comandi di avvio
+
+Interfacce rinominate: 
+- eth0 = enp0s3
+- eth1 = enp0s8
+- eth2 = enp0s9
+- eth3 = enp0s10
+
+Indirizzi ip nella rete: 
+- host-a -> 172.16.0.54/26
+- host-b ->172.16.1.10
+- host-c -> 192.168.0.5
+- router-1 -> 172.16.0.1 (per VLAN 10), 172.16.1.1 (VLAN 20), 10.10.15.1 (connessione router2)
+- router-2 -> 10.10.15.2(connessione router1), 172.16.0.0 (connessione host-c)
