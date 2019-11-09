@@ -129,8 +129,8 @@ Interfacce rinominate:
 - eth3 = enp0s10
 
 Indirizzi ip nella rete: 
-- host-a -> 172.16.0.54/26
-- host-b ->172.16.1.10
-- host-c -> 192.168.0.5
-- router-1 -> 172.16.0.1 (per VLAN 10), 172.16.1.1 (VLAN 20), 10.10.15.1 (connessione router2)
-- router-2 -> 10.10.15.2(connessione router1), 172.16.0.0 (connessione host-c)
+- host-a -> 145.10.1.1/23
+- host-b -> 145.11.1.1/24
+- host-c -> 123.0.1.2/25
+- router-1 -> 145.10.1.2/23 (per VLAN 10), 145.11.1.2/24 (VLAN 20), 145.12.1.1/30 (connessione router2)
+- router-2 -> 145.12.1.2/30(connessione router1), 123.0.1.1/25 (connessione host-c)
