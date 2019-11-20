@@ -129,8 +129,14 @@ Interfacce rinominate:
 - eth3 = enp0s10
 
 Indirizzi ip nella rete: 
-- host-a -> 145.10.1.1/23
-- host-b -> 145.11.1.1/24
-- host-c -> 123.0.1.2/25
+- host-a -> 145.10.1.1/26 #ssh address: 127.0.0.1:2202
+- host-b -> 145.11.1.1/24 #ssh connection: 127.0.0.1:2203 
+- host-c -> 123.0.1.2/23 ip for docker -> 172.17.0.1
 - router-1 -> 145.10.1.2/23 (per VLAN 10), 145.11.1.2/24 (VLAN 20), 145.12.1.1/30 (connessione router2)
 - router-2 -> 145.12.1.2/30(connessione router1), 123.0.1.1/25 (connessione host-c)
+
+docker pull dustnic82/nginx-test #fare pull per prendere immagine docker#
+
+docker in modalità detached -> docker eseguito all'interno dell'host-c, parte quando accendo host e si ferma quando
+spengo connessione host; permette accesso al promt dei comandi
+

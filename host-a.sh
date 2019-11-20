@@ -12,7 +12,7 @@ export DEBIAN_FRONTEND=noninteractive
 #aggiungo la porta all'host a con il tag vlan 10
 sudo ip link set dev enp0s8 up
 #sudo ip link add link enp0s8 name enp0s8.10 type vlan id 10
-sudo ip add add 145.10.1.1/23 dev enp0s8
+sudo ip add add 145.10.1.1/26 dev enp0s8
 #sudo ip link set dev enp0s8.10 up
 sudo ip route del default
 sudo ip route add default via 145.10.1.2

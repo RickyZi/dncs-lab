@@ -16,7 +16,7 @@ sysctl net.ipv4.ip_forward=1
 # Set-up the interfaces
 sudo ip link set dev enp0s8 up
 sudo ip link set dev enp0s9 up
-sudo ip addr add 123.0.1.1/25 dev enp0s8 
+sudo ip addr add 123.0.1.1/23 dev enp0s8 
 sudo ip addr add 145.12.1.2/30 dev enp0s9 
 #192.168.1.1/24
 sudo ip route del default
