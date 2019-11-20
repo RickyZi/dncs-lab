@@ -138,5 +138,5 @@ Indirizzi ip nella rete:
 docker pull dustnic82/nginx-test #fare pull per prendere immagine docker#
 
 docker in modalità detached -> docker eseguito all'interno dell'host-c, parte quando accendo host e si ferma quando
-spengo connessione host; permette accesso al promt dei comandi
+spengo connessione host; permette accesso al promt dei comandi al contrario di foreground
 
