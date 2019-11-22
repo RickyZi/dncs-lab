@@ -10,12 +10,10 @@ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubun
 sudo apt upgrade
 #sudo apt-get install -y docker.io
 apt-cache policy docker-ce
-sudo apt install docker-ce
+sudo apt install docker-ce --assume-yes --force-yes #sto forzando installazione docker
 sudo systemctl status docker
-docker pull dustnic82/nginx-test
-#docker run dustnic82/nginx-test #credo faccia casino il run (devo killare host-c da oracle vbox)
-#docker run --name ngnix-test -p 80:80 -d -v ~/docker-nginx/html:/usr/share/nginx/html nginx
-sudo docker run --name nginx-test -p 80:80 -d nginx
+sudo docker pull dustnic82/nginx-test
+docker run --name nginx-test -p 80:80 -d nginx
 #fa partire docker in modalità detached sulla porta 80; nome docker= nginx-test
 #--------------------------------------------------------------------------------------------------
 # Startup commands go here
